@@ -78,7 +78,7 @@ class CreateWorkflowRequest(BaseModel):
 class WorkflowReviewPayload(BaseModel):
     changes: Optional[ActivityPartition] = None
     comment: Optional[str] = Field(None, description="审核意见")
-  #没准审核意见可以再换掉
+  #没准"审核意见"名称可以再换掉,但是懒得想了,就这样吧
 
 class ReviewWorkflowRequest(BaseModel):
     action: WorkflowAction
